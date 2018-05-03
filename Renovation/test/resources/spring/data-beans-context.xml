@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/data/jpa
+       http://www.springframework.org/schema/data/jpa/spring-jpa.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+    <!-- Создаём источник данных на высокопроизводительном HikariCP -->
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="jdbcUrl" value="${jdbc.url}" />
+        <property name="username" value="${database.username}" />
+        <property name="password" value="${database.password}" />
+        <property name="maximumPoolSize" value="100" />
+    </bean>
+
+    <bean class="ru.XXXXXXXXX.renovation.config.Jackson2ObjectMapperBuilderConfigurationForRenovation"/>
+
+    <bean class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg ref="dataSource"/>
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg ref="dataSource"/>
+    </bean>
+
+    <!-- Instance of transaction template -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="persistenceUnitName" value="dataContextPersistance"/>
+        <property name="packagesToScan">
+            <list>
+                <!--<value>org.springframework.data.jpa.convert.threeten</value>-->
+                <!--<value>ru.XXXXXXXXX.publiccomment.domain.entity.</value>-->
+                <value>ru.XXXXXXXXX.construction.domain.entity</value>
+                <value>ru.XXXXXXXXX.notification.domain.entity</value>
+                <value>ru.XXXXXXXXX.dictionary.**</value>
+                <value>ru.XXXXXXXXX.data.jpa.entity.**</value>
+                <value>ru.XXXXXXXXX.user.domain.entity</value>
+                <value>ru.XXXXXXXXX.dictionary.domain.entity</value>
+                <value>ru.XXXXXXXXX.renovation.domain.entity</value>
+            </list>
+        </property>
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="showSql" value="false"/>
+                <property name="databasePlatform" value="org.hibernate.dialect.CustomPostgreSQLDialect"/>
+            </bean>
+        </property>
+        <property name="jpaProperties">
+            <props>
+                <prop key="hibernate.temp.use_jdbc_metadata_defaults">false</prop>
+                <prop key="hibernate.show_sql">false</prop>
+                <prop key="hibernate.format_sql">false</prop>
+                <prop key="hiberante.cache.use_second_level_cache">false</prop>
+                <prop key="hibernate.cache.use_query_cache">false</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL94Dialect</prop>
+                <prop key="hibernate.connection.autocommit">false</prop>
+                <prop key="org.hibernate.envers.default_schema">logs</prop>
+                <!-- Disable envers: https://developer.jboss.org/thread/263010 -->
+                <prop key="hibernate.listeners.envers.autoRegister">true</prop>
+                <prop key="hibernate.integration.envers.enabled">true</prop>
+                <prop key="hibernate.envers.autoRegisterListeners">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <jpa:repositories base-package="ru.XXXXXXXXX.data.jpa.repository"/>
+    <jpa:repositories base-package="ru.XXXXXXXXX.renovation.repository"/>
+
+    <context:component-scan base-package="ru.XXXXXXXXX.data.jpa.repository"/>
+    <context:component-scan base-package="ru.XXXXXXXXX.data.service.audit"/>
+    <context:component-scan base-package="ru.XXXXXXXXX.data.service.history"/>
+    <context:component-scan base-package="ru.XXXXXXXXX.renovation"/>
+    <context:component-scan base-package="ru.XXXXXXXXX.dictionary.service"/>
+</beans>

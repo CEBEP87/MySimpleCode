@@ -1,0 +1,143 @@
+{
+  "collection": [
+    {
+      "postCode": null,
+      "cadastralNumber": null,
+      "managementCompany": null,
+      "state": null,
+      "overhaulFund": null,
+      "typicalSeries": null,
+      "buildingMaterials": {
+        "ceiling": "test1",
+        "carcass": "test2",
+        "walls": "test3",
+        "foundation": "test4"
+      },
+      "buildingAreas": {
+        "totalArea": 123.22,
+        "livingArea": 123.22,
+        "notALivingArea": 123.22
+      },
+      "buildingParameters": {
+        "basementFloors": 1,
+        "heightFloor": 1,
+        "entrances": 1,
+        "apartments": 1,
+        "notALivingAreas": 1,
+        "garbageChute": {
+          "id": 71121143,
+          "name": "да",
+          "parentId": null
+        },
+        "gasRemoval": {
+          "id": 71121143,
+          "name": "да",
+          "parentId": null
+        },
+        "powerSupply": {
+          "id": 71121143,
+          "name": "да",
+          "parentId": null
+        }
+      },
+      "constructionYear": null,
+      "purpose": null,
+      "homeType": null,
+      "category": null,
+      "votePositive": null,
+      "voteNegative": null,
+      "area": null,
+      "address": "1-я Сиблова улица, 96",
+      "comment": null,
+      "status": {
+        "id": 71086031,
+        "name": "В работе",
+        "parentId": null
+      },
+      "completion": null,
+      "district": {
+        "id": 3470,
+        "name": null,
+        "parentId": null
+      },
+      "okrug": {
+        "id": 20647,
+        "name": null,
+        "parentId": null
+      },
+      "lastChangeDate": null,
+      "documents": [],
+      "renovationInfrastructures": [
+        {
+          "type": {
+            "id": 71088771,
+            "name": "Образование и наука",
+            "parentId": null
+          },
+          "address": "soso",
+          "name": "test1"
+        },
+        {
+          "type": {
+            "id": 71088771,
+            "name": "Образование и наука",
+            "parentId": null
+          },
+          "address": "soso2",
+          "name": "test2"
+        }
+      ]
+    },
+    {
+      "area": null,
+      "address": "1-я Сиблова улица, 97",
+      "comment": null,
+      "status": {
+        "id": 71086031,
+        "name": "В работе",
+        "parentId": null
+      },
+      "completion": null,
+      "district": {
+        "id": 3499,
+        "name": null,
+        "parentId": null
+      },
+      "okrug": {
+        "id": 20647,
+        "name": null,
+        "parentId": null
+      },
+      "lastChangeDate": null,
+      "documents": [],
+      "renovationInfrastructures": [
+        {
+          "type": {
+            "id": 71088771,
+            "name": "Образование и наука",
+            "parentId": null
+          },
+          "address": "soso",
+          "name": "test1"
+        },
+        {
+          "type": {
+            "id": 71088771,
+            "name": "Образование и наука",
+            "parentId": null
+          },
+          "address": "soso2",
+          "name": "test2"
+        }
+      ],
+      "resettlement": null,
+      "causeOfConstructionCancellation": null
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "toCheck": 2,
+    "toAgreement": 0,
+    "confirmed": 0
+  }
+}

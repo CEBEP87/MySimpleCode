@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration scan="true" scanPeriod="3 seconds">
+    <contextName>monitoring</contextName>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                [%-5level] %d{HH:mm:ss} %logger{32}.%M - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <!-- Для интеграционныых тестов -->
+    <root level="WARN">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <logger name="ru.XXXXXXXXX" level="WARN"/>
+    <logger name="org.hibernate" level="WARN"/>
+    <logger name="org.springframework" level="WARN"/>
+
+    <!--set DEBUG to display hibernate sql and parameter values-->
+    <logger name="org.hibernate.SQL">
+        <level value="DEBUG" />
+    </logger>
+    <logger name="org.hibernate.type">
+        <level value="TRACE" />
+    </logger>
+
+    <jmxConfigurator/>
+</configuration>

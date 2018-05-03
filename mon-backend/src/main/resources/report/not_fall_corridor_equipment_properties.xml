@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+    <docname>Протокол по росту стоимости ресурсов оборудования, мебели, инвентаря и принадлежностей/материалов, изделий и конструкций более 10% и снижению более 20%</docname>
+    <fontname>Arial</fontname>
+    <tablehead fontsize="8">
+        <col>
+            <row>№ № п/п</row>
+            <row></row>
+        </col>
+        <col>
+            <row>№ № позиций ТСН-2001.1</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Код ОКП ТСН 2001.1</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Код ОКПД2</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Наименование оборудования, мебели, инвентаря и принадлежностей</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Ед. изм. ТСН</row>
+            <row></row>
+        </col>
+       <col>
+            <row>Вес нетто</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Вес брутто</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Отпускная цена поставщика</row>
+            <row>-</row>
+        </col>
+        <col>
+            <row></row>
+            <row>-</row>
+        </col>
+        <col>
+            <row></row>
+            <row>-</row>
+        </col>
+        <col>
+            <row></row>
+            <row>Период текущий</row>
+        </col>
+        <col>
+            <row>Рост (снижение), %</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Утвержденная отпускная цена ресурса за прошлый период</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Рост (снижение), % от протоколов</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Наименование организации поставщика в прошлом периоде</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Наименование организации поставщика</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Производитель</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Примечание</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Доставка</row>
+            <row></row>
+        </col>
+        <col>
+            <row>кол-во повторений в проектах</row>
+            <row></row>
+        </col>
+        <col>
+            <row>периодичность мониторинга</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Проверено сотрудником</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Замечания начальника</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Замечания руководителя</row>
+            <row></row>
+        </col>
+
+
+    </tablehead>
+    <table fontsize="9">
+    </table>
+    <title fontsize="12">
+        <row>Протокол по росту стоимости ресурсов оборудования, мебели, инвентаря и принадлежностей/материалов, изделий и конструкций более 10% и снижению более 20%</row>
+        <!--<row>в III квартале 2016 г.</row>-->
+</title>
+<footer fontsize="12">
+<row>Должность:</row>
+<row>ФИО:</row>
+<row>Подпись:</row>
+<row>Дата:[data]</row>
+</footer>
+        </report>

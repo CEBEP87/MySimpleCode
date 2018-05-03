@@ -1,0 +1,46 @@
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by TeaM DJiNN (TeaM DJiNN) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="INDEX">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="PERIOD" type="xs:string"/>
+				<xs:element name="CHAPTER" type="xs:string" minOccurs="1"/>
+				<xs:element name="ITEMS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ITEM" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PRESSMARK" type="xs:string"/>
+										<xs:element name="RATE_TRANSPORT" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="RATE_MATERIAL" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="RATE_MACHINE" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="OVERHEAD" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="EXTRA_OVERHEAD" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="PROFIT" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="EXTRA_PROFIT" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="WINTER_RISE_PRICE" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="EXTRA_WINTER_RISE_PRICE" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="WINTER_RISE_PRICE_MAT" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="EXTRA_WINTER_RISE_PRICE_MAT" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="RATE_TOTAL" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="RATE_SALARY" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="RATE_EXTRA" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="BASE_OVERHEAD" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="BASE_EXTRA_OVERHEAD" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="BASE_PROFIT" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="BASE_EXTRA_PROFIT" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="BASE_WINTER_RISE_PRICE" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="BASE_EXTRA_WINTER_RISE_PRICE" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="BASE_WINTER_RISE_PRICE_MAT" type="xs:decimal" minOccurs="0"/>
+										<xs:element name="BASE_EXTRA_WINTER_RISE_PRICE_MAT" type="xs:decimal" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,49 @@
+{
+  "id": 2,
+  "uniqueId": "АО-Р-00001-18",
+  "area": null,
+  "address": "1-я Гражданская улица, 97",
+  "status": {
+    "id": 71086031,
+    "name": "В работе",
+    "parentId": null
+  },
+  "completion": 0.0,
+  "district": {
+    "id": 3513,
+    "name": "район Богородское",
+    "parentId": 3460
+  },
+  "okrug": {
+    "id": 3460,
+    "name": "Восточный административный округ",
+    "parentId": null
+  },
+  "lastChangeDate": "2018-03-09T23:46:06",
+  "renovationInfrastructures": [
+    {
+      "id": 1,
+      "name": "test1",
+      "address": "soso",
+      "type": {
+        "id": 71088771,
+        "name": "Образование и наука",
+        "parentId": null
+      }
+    },
+    {
+      "id": 2,
+      "name": "test2",
+      "address": "soso2",
+      "type": {
+        "id": 71088771,
+        "name": "Образование и наука",
+        "parentId": null
+      }
+    }
+  ],
+  "documents": [],
+  "comment": "bad",
+  "causeOfConstructionCancellation": "bad",
+  "resettlement": 2019
+}

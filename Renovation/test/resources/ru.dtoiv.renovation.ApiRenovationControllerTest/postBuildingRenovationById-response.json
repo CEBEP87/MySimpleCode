@@ -1,0 +1,73 @@
+{
+  "area": null,
+  "address": "1-я Гражданская улица, 96",
+
+  "district": {
+    "id": 3513,
+    "name": "район Богородское",
+    "parentId": 3460
+  },
+  "okrug": {
+    "id": 3460,
+    "name": "Восточный административный округ",
+    "parentId": null
+  },
+  "lastChangeDate": "2018-03-09T23:46:06",
+  "documents": [],
+  "postCode": 111222,
+  "renovationInfrastructures": [],
+  "cadastralNumber": "№233987239238",
+  "managementCompany": "Gods",
+  "state": {
+    "id": 978690,
+    "name": "Исправное",
+    "parentId": null
+  },
+  "buildingMaterials":{
+    "ceiling":"test1",
+    "carcass":"test2",
+    "walls":"test3",
+    "foundation":"test4"
+  },
+  "buildingAreas": {
+    "totalArea": 123.22,
+    "livingArea": 123.22,
+    "notALivingArea": 123.22
+  },
+  "buildingParameters": {
+    "basementFloors": 1,
+    "heightFloor": 1,
+    "entrances": 1,
+    "apartments": 1,
+    "notALivingAreas": 1,
+    "garbageChute": {
+      "id": 71121143,
+      "name": "Да",
+      "parentId": null
+    },
+    "gasRemoval": {
+      "id": 71121143,
+      "name": "Да",
+      "parentId": null
+    },
+    "powerSupply": {
+      "id": 71121143,
+      "name": "Да",
+      "parentId": null
+    }
+  },
+
+  "overhaulFund": "Gods",
+  "typicalSeries": {
+    "id": 72083100,
+    "name": "25",
+    "parentId": null
+  },
+  "constructionYear": 2014,
+  "purpose": "naznachenie",
+  "homeType": "stone",
+  "category": "one",
+  "votePositive": 312,
+  "voteNegative": 324,
+  "comment": "some comment"
+}

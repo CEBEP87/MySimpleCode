@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+    <docname>Отчет по результатам мониторинга за 4 периода</docname>
+    <fontname>Arial</fontname>
+    <tablehead fontsize="8">
+        <col>
+            <row> </row>
+            <row></row>
+        </col>
+        <col>
+            <row>Код</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Наименование</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Ед. изм.</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Базовая стоимость</row>
+            <row></row>
+        </col>
+        <col>
+            <row>В т.ч. зарплата</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Индекс текущий</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Индекс зарплаты</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Текущая стоимость</row>
+            <row></row>
+        </col>
+        <col>
+            <row>В т.ч. зарплата</row>
+            <row></row>
+        </col>
+        <col>
+            <row></row>
+            <row></row>
+        </col>
+        <col>
+            <row>Индекс предыдущий</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Рост индекса</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Рост индекса, %</row>
+            <row></row>
+        </col>
+        <col>
+            <row></row>
+            <row></row>
+        </col>
+        <col>
+            <row>Количество повторений ресурса</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Постоянные значения</row>
+            <row></row>
+        </col>
+        <col>
+            <row>-</row>
+            <row></row>
+        </col>
+        <col>
+            <row>Проверка базисной цены</row>
+            <row></row>
+        </col>
+        <col>
+            <row>-</row>
+            <row></row>
+        </col>
+
+
+    </tablehead>
+    <table fontsize="9">
+    </table>
+    <!--<service fontsize="8">-->
+        <!--<row>Приложение 1.1(Том I)</row>-->
+        <!--<row>к Техническому заданию</row>-->
+        <!--<row>государственных работ</row>-->
+    <!--</service>-->
+    <title fontsize="12">
+        <row>Отчет по росту индекса за </row>
+        <!--<row>поставщиков оборудования, мебели, инвентаря и пренадлежностей</row>-->
+        <!--<row>за I квартал 2017 г.</row>-->
+        <!--<row></row>-->
+    </title>
+    <footer fontsize="12">
+        <row>Должность:</row>
+        <row>ФИО:</row>
+        <row>Подпись:</row>
+        <row>Дата:[data]</row>
+    </footer>
+</report>
