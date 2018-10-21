@@ -31,15 +31,9 @@ public class RenovationConfiguration extends WebMvcConfigurerAdapter {
     @Autowired
     RenovationRepository repository;
 
-    //TODO: DELETE by IGOR
     @PostConstruct
     public void initDb() {
         log.info("Begin populate Renovation table...");
-//        Renovation building = Renovation.builder()
-//                .id(1)
-//                .address("Тестовый адрес")
-//                .renovationNumber("number").build();
-//        repository.update(building);
         log.info("Renovation table was filing!");
     }
     @Bean
