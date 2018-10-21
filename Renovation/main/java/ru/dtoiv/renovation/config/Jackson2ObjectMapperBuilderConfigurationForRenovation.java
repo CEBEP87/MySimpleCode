@@ -22,10 +22,7 @@ public class Jackson2ObjectMapperBuilderConfigurationForRenovation {
 
     @Bean
     public ObjectMapper objectMapper() {
-        //TODO: добавить Java 8 Time кастомные сериализаторы
-
-        // Это застравит Jackson прогружать Lazy связи.
-        // Envers работает только с Lazy, Eager не поддерживается
+       
         Hibernate5Module hm = new Hibernate5Module();
         hm.configure(Hibernate5Module.Feature.FORCE_LAZY_LOADING, true);
 
