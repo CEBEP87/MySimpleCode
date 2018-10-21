@@ -16,8 +16,8 @@ import ru.XXXXXXXXX.user.service.UserService;
 @Service
 @Transactional
 public class RenovationWorkflowServiceImpl implements RenovationWorkflowService {
-    private final RenovationRepository renovationRepository;
-    private final UserService userService;
+     final RenovationRepository renovationRepository;
+     final UserService userService;
 
     /*   private final PersistentPropertiesService persistentPropertiesService;
        private final NotificationService notificationService;
