@@ -34,10 +34,10 @@ import java.util.*;
 @Transactional
 @Service
 public class RenovationServiceImpl implements RenovationService {
-    private final RenovationRepository repository;
-    private final ObjectMapper objectMapper;
-    private final HistoryService auditHistoryService;
-    private final UserService userService;
+     final RenovationRepository repository;
+     final ObjectMapper objectMapper;
+     final HistoryService auditHistoryService;
+     final UserService userService;
 
 
     @PersistenceContext
