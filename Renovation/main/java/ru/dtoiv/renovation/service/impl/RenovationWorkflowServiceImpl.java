@@ -26,16 +26,12 @@ public class RenovationWorkflowServiceImpl implements RenovationWorkflowService 
     public RenovationWorkflowServiceImpl(RenovationRepository renovationRepository, UserService userService) {
         this.renovationRepository = renovationRepository;
         this.userService = userService;
-  /*      this.persistentPropertiesService = persistentPropertiesService;
-        this.notificationService = notificationService;
- */
     }
 
     @Override
     public String sendOnReview(int id, CommentModel comment) {
         final Renovation renovation = renovationRepository.findOne(id);
         DictionaryElementShort state = new DictionaryElementShort();
-        //notificationService.sendDistrictPassport(districtPassport, comment.getComment(), MessageRenovationDescription.TO_AGREEMENT);
         state.setId(MessageRenovationDescription.TO_AGREEMENT.getStatus());
         state.setName("На проверке");
         renovation.setStatus(state);
@@ -59,7 +55,6 @@ public class RenovationWorkflowServiceImpl implements RenovationWorkflowService 
             return null;
         }
 
-        // notificationService.sendDistrictPassport(districtPassport,comment.getComment(),md);
         DictionaryElementShort state = new DictionaryElementShort();
         state.setId(md.getStatus());
         if(md.getStatus()==71086031)
